@@ -1,0 +1,36 @@
+<ion-card>
+  <form (ngSubmit)="submit()" [formGroup]="textForm">
+    <ion-item>
+      <ion-input
+        label="Рядок №1"
+        formControlName="string"
+        placeholder="Рядок №1"
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input
+        label="Рядок №2"
+        formControlName="string1"
+        placeholder="Рядок №2"
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input
+        label="Рядок №2"
+        formControlName="string2"
+        placeholder="Рядок №3"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input
+        label="Довжина підрядка"
+        formControlName="lettersQuantity"
+        placeholder="Рядок №3"
+        type="number"
+      ></ion-input>
+    </ion-item>
+
+    <ion-button type="submit">Знайти патерни</ion-button>
+  </form>
+</ion-card>

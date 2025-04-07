@@ -1,0 +1,15 @@
+<ion-content [fullscreen]="true">
+  <app-form (textSubmitted)="setPatternsFrequencyData($event)"></app-form>
+
+  <ion-grid *ngIf="pattersFrequencyData.length > 0">
+    <ion-row color="light">
+      <ion-col><strong>Патерн</strong></ion-col>
+      <ion-col><strong>Кількість входжень</strong></ion-col>
+    </ion-row>
+
+    <ion-row *ngFor="let item of pattersFrequencyData">
+      <ion-col>{{ item.pattern }}</ion-col>
+      <ion-col>{{ item.count }}</ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

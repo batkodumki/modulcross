@@ -1,0 +1,28 @@
+ion-grid {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+
+  ion-row {
+    border-bottom: 1px solid #ccc;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    ion-col {
+      padding: 10px;
+      border-right: 1px solid #eee;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+
+    &.header-row {
+      background-color: #f8f8f8;
+      font-weight: bold;
+    }
+  }
+}
